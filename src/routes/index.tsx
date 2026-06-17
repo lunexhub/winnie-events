@@ -97,27 +97,27 @@ function Hero() {
         className="absolute -top-32 -right-32 w-[480px] h-[480px] rounded-full blur-3xl opacity-40 animate-float"
         style={{ background: "var(--gradient-brand)" }}
       />
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-20 sm:pt-24 pb-4 sm:pb-6 text-primary-foreground animate-fade-up">
-        <div className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-2.5 sm:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[10px] tracking-[0.12em] uppercase backdrop-blur">
-          <span className="h-1 w-1 sm:h-1.5 sm:w-1.5 rounded-full bg-secondary" />
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 pt-24 sm:pt-24 pb-6 sm:pb-6 text-primary-foreground animate-fade-up">
+        <div className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-3 py-1.5 text-[10px] sm:text-[10px] tracking-wider uppercase backdrop-blur">
+          <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
           <span className="hidden sm:inline">Proudly South African · Est. by Winnie Malete</span>
           <span className="sm:hidden">SA · Since 2011</span>
         </div>
-        <h1 className="mt-2 sm:mt-3 text-[28px] leading-[1.1] sm:text-4xl md:text-5xl lg:text-6xl sm:leading-[1.08] font-semibold max-w-4xl">
+        <h1 className="mt-4 sm:mt-3 text-[40px] leading-[1.15] sm:text-4xl md:text-5xl lg:text-6xl sm:leading-[1.08] font-semibold max-w-4xl">
           Events that move people, <span className="italic text-gradient-brand bg-clip-text">beautifully</span>.
         </h1>
-        <p className="mt-2 sm:mt-3 max-w-2xl text-[11px] leading-[1.4] sm:text-sm lg:text-base sm:leading-relaxed text-white/90">
+        <p className="mt-4 sm:mt-3 max-w-2xl text-[14px] leading-[1.6] sm:text-sm lg:text-base sm:leading-relaxed text-white/95 font-normal">
           From corporate galas in Sandton to conservation gatherings in the bushveld — NT Events Management designs and delivers experiences that reflect excellence, attention to detail, and personalised service.
         </p>
-        <div className="mt-3 sm:mt-5 flex flex-col sm:flex-row gap-2 sm:gap-3">
-          <a href="#contact" className="inline-flex items-center justify-center gap-1.5 rounded-full px-4 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold bg-gradient-brand text-primary-foreground shadow-pink hover:scale-[1.03] transition-smooth">
-            Start a project <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+        <div className="mt-5 sm:mt-5 flex flex-col sm:flex-row gap-3 sm:gap-3">
+          <a href="#contact" className="inline-flex items-center justify-center gap-2 rounded-full px-6 sm:px-5 py-3 sm:py-2.5 text-[15px] sm:text-sm font-semibold bg-gradient-brand text-primary-foreground shadow-pink hover:scale-[1.03] transition-smooth">
+            Start a project <ArrowRight className="h-4 w-4" />
           </a>
-          <a href="#services" className="inline-flex items-center justify-center gap-1.5 rounded-full px-4 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold border border-white/40 text-white hover:bg-white/10 transition-smooth">
+          <a href="#services" className="inline-flex items-center justify-center gap-2 rounded-full px-6 sm:px-5 py-3 sm:py-2.5 text-[15px] sm:text-sm font-semibold border border-white/40 text-white hover:bg-white/10 transition-smooth">
             Explore our services
           </a>
         </div>
-        <dl className="mt-4 sm:mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-3xl">
+        <dl className="mt-6 sm:mt-6 grid grid-cols-2 sm:grid-cols-4 gap-5 sm:gap-4 max-w-3xl">
           {[
             { k: "13+", v: "Years of experience" },
             { k: "200+", v: "Events delivered" },
@@ -125,8 +125,8 @@ function Hero() {
             { k: "9", v: "Service disciplines" },
           ].map((s) => (
             <div key={s.v}>
-              <dt className="font-display text-lg sm:text-2xl lg:text-3xl text-white">{s.k}</dt>
-              <dd className="mt-0.5 text-[7px] sm:text-[9px] uppercase tracking-widest text-white/70 leading-tight">{s.v}</dd>
+              <dt className="font-display text-[28px] sm:text-2xl lg:text-3xl text-white leading-none">{s.k}</dt>
+              <dd className="mt-1 text-[9px] sm:text-[9px] uppercase tracking-[0.1em] text-white/75 leading-tight">{s.v}</dd>
             </div>
           ))}
         </dl>
